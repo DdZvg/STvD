@@ -15,6 +15,7 @@ jobs:
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_KEY }}
           port: 22
+          key_path: ""
           script: |
             cd ~/proyectos/game
             git pull
