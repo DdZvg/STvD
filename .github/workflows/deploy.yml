@@ -11,6 +11,7 @@ jobs:
       - name: Deploy al servidor
         run: |
           cd ~/proyectos/game
+          git clean -fd
           git pull
           npm install
           pm2 restart game || pm2 start index.js --name "game"
